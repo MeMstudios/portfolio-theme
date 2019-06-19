@@ -98,7 +98,9 @@ a:hover, a:active {
     z-index: 2;
 }
 .hidden-description {
+    opacity: 0.0;
     display: none;
+    padding: 20px;
 }
 
 /*
@@ -288,7 +290,7 @@ a:hover, a:active {
     .social-profiles ul {
         padding: 80px 15px 30px;
         margin: 0;
-    }
+    }    
 }
 
 @media screen and (min-width: 992px) {
@@ -478,7 +480,7 @@ a:hover, a:active {
 
     .home-page .portfolio-content {
         margin-bottom: 0;
-    }
+    }    
 }
 
 /*--------------------------------------------------------------
@@ -780,6 +782,11 @@ a:hover, a:active {
 
     .blog-page .blog-content .entry-content h3 {
         line-height: 1;
+    }
+
+    .portfolio-content .entry-content {
+        visibility: visible;
+        opacity: 0.7;
     }
 }
 

@@ -22,17 +22,39 @@
     $(window).scroll( function() {
         $('.arrow-down').hide();
     });
-    //Show the hidden description
+
+    //Show the hidden description    
     $('.description').on('click', function(event) {
-        event.preventDefault();
-        $('.show').hide(100);
-        $('.hidden-description').show(100);
+        if (event.target.className != "description-link") {
+            event.preventDefault();        
+            var hidden = $('.hidden-description').css('opacity') == 0.0;        
+            if (hidden) {
+                $('.show').animate({
+                    opacity: 0.0
+                }, 420, function () {
+                    $('.show').hide();
+                    $('.hidden-description').show();
+                });
+                $('.hidden-description').animate({
+                    opacity: 1.0
+                }, 200)
+            }
+            else {
+                //hide the hidden description
+                $('.hidden-description').animate({
+                    opacity: 0.0
+                }, 420, function () {
+                    $('.hidden-description').hide();
+                    $('.show').show();
+                });
+                $('.show').animate({
+                    opacity: 1.0
+                }, 200);
+            }
+        }
     });
-    //hide the hidden description
-    $('.hidden-description').on('click', function(event) {
-        event.preventDefault();
-        $('.hidden-description').hide(100);
-        $('.show').show(100);
-    });
+    $('.blue').on('mouseover', function(event) {
+        
+    })
     
 })(jQuery);
