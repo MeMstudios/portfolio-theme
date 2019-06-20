@@ -26,12 +26,12 @@
     //Show the hidden description    
     $('.description').on('click', function(event) {
         if (event.target.className != "description-link") {
-            event.preventDefault();        
+            event.preventDefault();
             var hidden = $('.hidden-description').css('opacity') == 0.0;        
             if (hidden) {
                 $('.show').animate({
                     opacity: 0.0
-                }, 420, function () {
+                }, 200, function () {
                     $('.show').hide();
                     $('.hidden-description').show();
                 });
@@ -43,18 +43,73 @@
                 //hide the hidden description
                 $('.hidden-description').animate({
                     opacity: 0.0
-                }, 420, function () {
+                }, 200, function () {
                     $('.hidden-description').hide();
                     $('.show').show();
                 });
                 $('.show').animate({
                     opacity: 1.0
                 }, 200);
-            }
+            }           
         }
     });
-    $('.blue').on('mouseover', function(event) {
-        
-    })
+    $('.portfolio-content').on('mouseover', function(event) {
+        if ($(this).hasClass('pm')) {
+            $('#pm-head').css('visibility', 'visible');
+            $('#pm-head').css('opacity', '1');
+            $('#dev-head').css('visibility', 'hidden');
+            $('#dev-head').css('opacity', '0');
+            $('#devops-head').css('visibility', 'hidden');
+            $('#devops-head').css('opacity', '0');
+            $('#music-head').css('visibility', 'hidden');
+            $('#music-head').css('opacity', '0');
+            $('.blue').css('opacity', '0.4')
+            $('.yellow').css('opacity', '0.8');
+            $('.green').css('opacity', '0.8');
+            $('.purple').css('opacity', '0.8');
+        }
+        else if ($(this).hasClass('dev')) {
+            $('#pm-head').css('visibility', 'hidden');
+            $('#pm-head').css('opacity', '0');
+            $('#dev-head').css('visibility', 'visible');
+            $('#dev-head').css('opacity', '1');
+            $('#devops-head').css('visibility', 'hidden');
+            $('#devops-head').css('opacity', '0');
+            $('#music-head').css('visibility', 'hidden');
+            $('#music-head').css('opacity', '0');
+            $('.blue').css('opacity', '0.8')
+            $('.yellow').css('opacity', '0.4');
+            $('.green').css('opacity', '0.8');
+            $('.purple').css('opacity', '0.8');
+        }
+        else if ($(this).hasClass('devops')) {
+            $('#pm-head').css('visibility', 'hidden');
+            $('#pm-head').css('opacity', '0');
+            $('#dev-head').css('visibility', 'hidden');
+            $('#dev-head').css('opacity', '0');
+            $('#devops-head').css('visibility', 'visible');
+            $('#devops-head').css('opacity', '1');
+            $('#music-head').css('visibility', 'hidden');
+            $('#music-head').css('opacity', '0');
+            $('.blue').css('opacity', '0.8')
+            $('.yellow').css('opacity', '0.8');
+            $('.green').css('opacity', '0.4');
+            $('.purple').css('opacity', '0.8');
+        }
+        else if ($(this).hasClass('music')) {
+            $('#pm-head').css('visibility', 'hidden');
+            $('#pm-head').css('opacity', '0');
+            $('#dev-head').css('visibility', 'hidden');
+            $('#dev-head').css('opacity', '0');
+            $('#devops-head').css('visibility', 'hidden');
+            $('#devops-head').css('opacity', '0');
+            $('#music-head').css('visibility', 'visible');
+            $('#music-head').css('opacity', '1');
+            $('.blue').css('opacity', '0.8')
+            $('.yellow').css('opacity', '0.8');
+            $('.green').css('opacity', '0.8');
+            $('.purple').css('opacity', '0.4');
+        }
+    });
     
 })(jQuery);

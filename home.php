@@ -17,92 +17,76 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 no-padding">
-                <div class="portfolio-content description blue">
-                    <figure>
+                <div class="portfolio-content pm">
+                    <figure class="blue">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/head.png" alt="Project Management">
                     </figure>
-                        <div class="entry-content flex flex-column align-items-center justify-content-center">
-                            
-                            <div class="show">
-                                <h3><a href="#">Project Management</a></h3>
+                        <div id="pm-head" class="entry-content flex flex-column align-items-center justify-content-center">                            
+                                
+                            <h3><a href="#">Project Management</a></h3>
 
-                                <ul class="flex flex-wrap justify-content-center">
-                                    <li><a href="#">Agile</a> /</li>
-                                    <li><a href="#">Process</a> /</li>
-                                    <li><a href="#">Planning</a></li>
-                                </ul>
-                            </div>
-                            <h4 class="flex flex-wrap justify-content-center hidden-description">
-                                Understanding systems and processes brings a fresh perspective to every project.
-                            </h4>
+                            <ul class="flex flex-wrap justify-content-center">
+                                <li>Agile /</li>
+                                <li>Process /</li>
+                                <li>Planning</li>
+                            </ul>
                         </div><!-- .entry-content -->                    
                 </div><!-- .portfolio-content -->
             </div><!-- .col -->
 
             <div class="col-12 col-md-6 col-lg-3 no-padding">
-                <div class="portfolio-content description yellow">
-                    <figure>
+                <div class="portfolio-content dev">
+                    <figure class="yellow">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/big-head-sq.png" alt="Development">
                     </figure>
 
-                    <div class="entry-content flex flex-column align-items-center justify-content-center">
-                        <div class="show">
-                            <h3><a href="#">Development</a></h3>
+                    <div id="dev-head" class="entry-content flex flex-column align-items-center justify-content-center">
+                        
+                        <h3><a href="#">Development</a></h3>
 
-                            <ul class="flex flex-wrap justify-content-center">
-                                <li><a href="#">Software Design</a> /</li>
-                                <li><a href="#">REST API</a> /</li>
-                                <li><a href="#">Wordpress</a></li>
-                            </ul>
-                        </div>
-                        <h4 class="flex flex-wrap justify-content-center hidden-description">
-                                Solving tough problems and writing efficient code.
-                        </h4>
+                        <ul class="flex flex-wrap justify-content-center">                            
+                            <li>PHP /</li>
+                            <li>APIs /</li>
+                            <li>JavaScript Frameworks</li>
+                        </ul>
                     </div><!-- .entry-content -->
                 </div><!-- .portfolio-content -->
             </div><!-- .col -->
 
             <div class="col-12 col-md-6 col-lg-3 no-padding">
-                <div class="portfolio-content description">
+                <div class="portfolio-content devops">
                     <figure class="green">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cloud-head.png" alt="DevOps">
                     </figure>
 
-                    <div class="entry-content flex flex-column align-items-center justify-content-center">
-                        <div class="show">
-                            <h3><a href="#">DevOps</a></h3>
+                    <div id="devops-head" class="entry-content flex flex-column align-items-center justify-content-center">
+                     
+                        <h3><a href="#">DevOps</a></h3>
 
-                            <ul class="flex flex-wrap justify-content-center">
-                                <li><a href="#">Servers</a> /</li>
-                                <li><a href="#">Automation</a></li>
-                            </ul>
-                        </div>
-                        <h4 class="flex flex-wrap justify-content-center hidden-description">
-                                Troubleshooting servers. Automating deployment.
-                        </h4>
+                        <ul class="flex flex-wrap justify-content-center">
+                            <li>Servers /</li>
+                            <li>Automation /</li>
+                            <li>CI/CD</li>
+                        </ul>
                     </div><!-- .entry-content -->
                 </div><!-- .portfolio-content -->
             </div><!-- .col -->
 
             <div class="col-12 col-md-6 col-lg-3 no-padding">
-                <div class="portfolio-content description">
+                <div class="portfolio-content music">
                     <figure class="purple">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/color-head.png" alt="Music">
                     </figure>
 
-                    <div class="entry-content flex flex-column align-items-center justify-content-center">
-                        <div class="show">
-                            <h3><a href="#">Personal Projects</a></h3>
+                    <div id="music-head" class="entry-content flex flex-column align-items-center justify-content-center">
+                        
+                        <h3><a href="#">Personal Projects</a></h3>
 
-                            <ul class="flex flex-wrap justify-content-center">
-                                <li><a href="#">Research</a> /</li>
-                                <li><a href="#">Music</a> /</li>
-                                <li><a href="#">GoLang</a></li>
-                            </ul>
-                        </div>
-                        <h4 class="flex flex-wrap justify-content-center hidden-description">
-                                Emerging technologies. Music Production. GoLang.
-                        </h4>
+                        <ul class="flex flex-wrap justify-content-center">
+                            <li>Research /</li>
+                            <li>Music /</li>
+                            <li>GoLang</li>
+                        </ul>
                     </div><!-- .entry-content -->
                 </div><!-- .portfolio-content -->
             </div><!-- .col -->
@@ -114,18 +98,22 @@
                     if($j==0) {
                         $posts = $pm_posts;
                         $color = "blue";
+                        $class = "pm";
                     }
                     elseif($j==1) {
                         $posts = $dev_posts;
                         $color = "yellow";
+                        $class = "dev";
                     }
                     elseif($j==2) {
                         $posts = $devops_posts;
                         $color = "green";
+                        $class = "devops";
                     }
                     else {
                         $posts = $music_posts;
                         $color = "purple";
+                        $class = "music";
                     }
                     $title =  $posts[$i]->post_title;
                     $pic = get_the_post_thumbnail($posts[$i], 'full');
@@ -134,7 +122,7 @@
                     $description = get_field("description", $posts[$i]->ID);
                     ?>
                     <div class="col-12 col-md-6 col-lg-3 no-padding">
-                        <div class="portfolio-content description">
+                        <div class="portfolio-content description <?php echo $class ?>">
                             <figure class=<?php echo $color ?>>
                                 <?php echo $pic ?>
                             </figure>
