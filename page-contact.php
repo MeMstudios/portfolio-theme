@@ -8,7 +8,7 @@
                     <ul class="breadcrumbs flex align-items-center">
                         <li><a href="/">Home</a></li>
                         
-                        <li>Details</li>
+                        <li>Contact</li>
                     </ul><!-- .breadcrumbs -->
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -31,12 +31,11 @@
 
                             <h1><?php echo get_the_title(); ?></h1>
 
-                            
+                            <div class="contact">
+                                <?php echo do_shortcode('[contact-form-7 id="192" title="Contact form"]'); ?>
+                            </div>
                         </header><!-- .entry-header -->
 
-                        <div class="entry-content">
-                            <p><?php the_field('description', $post->ID); ?></p>
-                        </div><!-- .entry-content -->
                     </div><!-- .content-area -->
                 </div><!-- .col-12 -->
             </div><!-- .row -->

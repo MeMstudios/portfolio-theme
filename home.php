@@ -2,7 +2,7 @@
     get_header();
     $args = array (
         'category_name' => 'project-management',
-        'numberposts' => 2,
+        'numberposts' => 3,
         'order' => 'ASC'
     ); 
     $pm_posts = get_posts($args);
@@ -117,9 +117,10 @@
                     }
                     $title =  $posts[$i]->post_title;
                     $pic = get_the_post_thumbnail($posts[$i], 'full');
-                    $link = get_field("link_0", $posts[$i]->ID);
-                    $link_title = get_field("link_title_0", $posts[$i]->ID);
+                    $link = get_field("link", $posts[$i]->ID);
+                    $link_title = get_field("link_title", $posts[$i]->ID);
                     $description = get_field("description", $posts[$i]->ID);
+                    $description_title = get_field("description_title", $posts[$i]->ID)
                     ?>
                     <div class="col-12 col-md-6 col-lg-3 no-padding">
                         <div class="portfolio-content description <?php echo $class ?>">
@@ -131,9 +132,11 @@
                                 <div class="show">
                                     <h3><a href='#'><?php echo $title ?></a></h3>
 
-                                    <ul class="flex flex-wrap justify-content-center">                                    
-                                        <li><a class="description-link" target="_blank" href=<?php echo $link ?>><?php echo $link_title?></a><?php if($link_title != '') { echo " /"; } ?></li>
-                                        <li><a href="#">Description</a></li>
+                                    <ul class="flex flex-wrap justify-content-center">
+
+                                        <li><a href="#"><?php echo $description_title ?><?php if($link_title != '') { echo " /"; } ?></a></li>
+                                        <li><a class="description-link" target="_blank" href=<?php echo $link ?>><?php echo $link_title?></a></li>
+                                        
                                     </ul>
                                 </div>
                                 <div class="flex flex-wrap justify-content-center hidden-description">
@@ -145,6 +148,9 @@
                                     </p>
                                     <ul class="flex flex-wrap justify-content-center">                                    
                                         <li><a class="description-link" target="_blank" href=<?php echo $link ?>><?php echo $link_title?></a></li>
+                                        <?php if($link_title == '') { ?>
+                                            <li><a href="#">Back</a></li>
+                                        <?php } ?>
                                     </ul>
                                 </div>
                             </div><!-- .entry-content -->
