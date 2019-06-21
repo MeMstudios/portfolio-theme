@@ -75,12 +75,12 @@
             <div class="col-12 col-md-6 col-lg-3 no-padding">
                 <div class="portfolio-content music">
                     <figure class="purple">
-                        <img id="music-link" src="<?php echo get_stylesheet_directory_uri(); ?>/images/color-head.png" alt="Music">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/color-head.png" alt="Music">
                     </figure>
 
                     <div id="music-head" class="entry-content flex flex-column align-items-center justify-content-center">
                         
-                        <h3><a href="#">Personal Projects</a></h3>
+                        <h3><a id="music-link" href="#">Personal Projects</a></h3>
 
                         <ul class="flex flex-wrap justify-content-center">
                             <li>Research /</li>
