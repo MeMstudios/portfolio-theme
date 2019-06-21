@@ -23,7 +23,7 @@
                     </figure>
                         <div id="pm-head" class="entry-content flex flex-column align-items-center justify-content-center">                            
                                 
-                            <h3><a href="#">Project Management</a></h3>
+                            <h3><a id="pm-link" href="#">Project Management</a></h3>
 
                             <ul class="flex flex-wrap justify-content-center">
                                 <li>Agile /</li>
@@ -42,7 +42,7 @@
 
                     <div id="dev-head" class="entry-content flex flex-column align-items-center justify-content-center">
                         
-                        <h3><a href="#">Development</a></h3>
+                        <h3><a id="dev-link" href="#">Development</a></h3>
 
                         <ul class="flex flex-wrap justify-content-center">                            
                             <li>PHP /</li>
@@ -61,7 +61,7 @@
 
                     <div id="devops-head" class="entry-content flex flex-column align-items-center justify-content-center">
                      
-                        <h3><a href="#">DevOps</a></h3>
+                        <h3><a id="devops-link" href="#">DevOps</a></h3>
 
                         <ul class="flex flex-wrap justify-content-center">
                             <li>Servers /</li>
@@ -75,7 +75,7 @@
             <div class="col-12 col-md-6 col-lg-3 no-padding">
                 <div class="portfolio-content music">
                     <figure class="purple">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/color-head.png" alt="Music">
+                        <img id="music-link" src="<?php echo get_stylesheet_directory_uri(); ?>/images/color-head.png" alt="Music">
                     </figure>
 
                     <div id="music-head" class="entry-content flex flex-column align-items-center justify-content-center">
@@ -98,22 +98,22 @@
                     if($j==0) {
                         $posts = $pm_posts;
                         $color = "blue";
-                        $class = "pm";
+                        $id = "pm";
                     }
                     elseif($j==1) {
                         $posts = $dev_posts;
                         $color = "yellow";
-                        $class = "dev";
+                        $id = "dev";
                     }
                     elseif($j==2) {
                         $posts = $devops_posts;
                         $color = "green";
-                        $class = "devops";
+                        $id = "devops";
                     }
                     else {
                         $posts = $music_posts;
                         $color = "purple";
-                        $class = "music";
+                        $id = "music";
                     }
                     $title =  $posts[$i]->post_title;
                     $pic = get_the_post_thumbnail($posts[$i], 'full');
@@ -123,7 +123,7 @@
                     $description_title = get_field("description_title", $posts[$i]->ID)
                     ?>
                     <div class="col-12 col-md-6 col-lg-3 no-padding">
-                        <div class="portfolio-content description <?php echo $class ?>">
+                        <div id=<?php echo $id ?> class="portfolio-content description">
                             <figure class=<?php echo $color ?>>
                                 <?php echo $pic ?>
                             </figure>

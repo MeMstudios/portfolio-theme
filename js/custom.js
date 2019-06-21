@@ -11,12 +11,37 @@
     });
 
     // Scroll to Next Section
-    $( '.scroll-down' ).on( 'click', function() {
-        $( 'html, body' ).animate({
-            scrollTop: $( '.scroll-down' ).offset().top + 100
-        }, 800 );
-        $('.arrow-down').hide(200);
-        
+    $( '#pm-link' ).on( 'click', function(event) {
+        event.preventDefault();
+        if ($(window).width() < 850) {
+            $( 'html, body' ).animate({
+                scrollTop: $( '#pm' ).offset().top
+            }, 650 );
+        }
+    });
+    $( '#dev-link' ).on( 'click', function(event) {
+        event.preventDefault();
+        if ($(window).width() < 850) {
+            $( 'html, body' ).animate({
+                scrollTop: $( '#dev' ).offset().top
+            }, 650 );
+        }
+    });
+    $( '#devops-link' ).on( 'click', function(event) {
+        event.preventDefault();
+        if ($(window).width() < 850) {
+            $( 'html, body' ).animate({
+                scrollTop: $( '#devops' ).offset().top
+            }, 650 );
+        }
+    });
+    $( '#music-link' ).on( 'click', function(event) {
+        event.preventDefault();
+        if ($(window).width() < 850) {
+            $( 'html, body' ).animate({
+                scrollTop: $( '#music' ).offset().top
+            }, 650 );
+        }
     });
     //Hide the arrow on scroll down.
     $(window).scroll( function() {
