@@ -17,7 +17,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 no-padding">
-                <div class="portfolio-content pm">
+                <div id="pm-header" class="portfolio-content">
                     <figure class="blue">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/head.png" alt="Project Management">
                     </figure>
@@ -35,7 +35,7 @@
             </div><!-- .col -->
 
             <div class="col-12 col-md-6 col-lg-3 no-padding">
-                <div class="portfolio-content dev">
+                <div id="dev-header" class="portfolio-content">
                     <figure class="yellow">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/big-head-sq.png" alt="Development">
                     </figure>
@@ -54,7 +54,7 @@
             </div><!-- .col -->
 
             <div class="col-12 col-md-6 col-lg-3 no-padding">
-                <div class="portfolio-content devops">
+                <div id="devops-header" class="portfolio-content">
                     <figure class="green">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cloud-head.png" alt="DevOps">
                     </figure>
@@ -73,7 +73,7 @@
             </div><!-- .col -->
 
             <div class="col-12 col-md-6 col-lg-3 no-padding">
-                <div class="portfolio-content music">
+                <div id="music-header" class="portfolio-content">
                     <figure class="purple">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/color-head.png" alt="Music">
                     </figure>

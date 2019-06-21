@@ -79,7 +79,7 @@
         }
     });
     $('.portfolio-content').on('mouseover', function(event) {
-        if (this.id == 'pm') {
+        if (this.id == 'pm' || this.id == 'pm-header') {
             $('#pm-head').css('visibility', 'visible');
             $('#pm-head').css('opacity', '1');
             $('#dev-head').css('visibility', 'hidden');
@@ -93,7 +93,7 @@
             $('.green').css('opacity', '0.8');
             $('.purple').css('opacity', '0.8');
         }
-        if (this.id == 'dev') {
+        if (this.id == 'dev' || this.id == 'dev-header') {
             $('#pm-head').css('visibility', 'hidden');
             $('#pm-head').css('opacity', '0');
             $('#dev-head').css('visibility', 'visible');
@@ -107,7 +107,7 @@
             $('.green').css('opacity', '0.8');
             $('.purple').css('opacity', '0.8');
         }
-        if (this.id == 'devops') {
+        if (this.id == 'devops' || this.id == 'devops-header') {
             $('#pm-head').css('visibility', 'hidden');
             $('#pm-head').css('opacity', '0');
             $('#dev-head').css('visibility', 'hidden');
@@ -121,7 +121,7 @@
             $('.green').css('opacity', '0.4');
             $('.purple').css('opacity', '0.8');
         }
-        if (this.id == 'music') {
+        if (this.id == 'music' || this.id == 'music-header') {
             $('#pm-head').css('visibility', 'hidden');
             $('#pm-head').css('opacity', '0');
             $('#dev-head').css('visibility', 'hidden');
