@@ -79,7 +79,7 @@
         }
     });
     $('.portfolio-content').on('mouseover', function(event) {
-        if ($(this).hasClass('pm')) {
+        if (this.id == 'pm') {
             $('#pm-head').css('visibility', 'visible');
             $('#pm-head').css('opacity', '1');
             $('#dev-head').css('visibility', 'hidden');
@@ -93,7 +93,7 @@
             $('.green').css('opacity', '0.8');
             $('.purple').css('opacity', '0.8');
         }
-        else if ($(this).hasClass('dev')) {
+        if (this.id == 'dev') {
             $('#pm-head').css('visibility', 'hidden');
             $('#pm-head').css('opacity', '0');
             $('#dev-head').css('visibility', 'visible');
@@ -107,7 +107,7 @@
             $('.green').css('opacity', '0.8');
             $('.purple').css('opacity', '0.8');
         }
-        else if ($(this).hasClass('devops')) {
+        if (this.id == 'devops') {
             $('#pm-head').css('visibility', 'hidden');
             $('#pm-head').css('opacity', '0');
             $('#dev-head').css('visibility', 'hidden');
@@ -121,7 +121,7 @@
             $('.green').css('opacity', '0.4');
             $('.purple').css('opacity', '0.8');
         }
-        else if ($(this).hasClass('music')) {
+        if (this.id == 'music') {
             $('#pm-head').css('visibility', 'hidden');
             $('#pm-head').css('opacity', '0');
             $('#dev-head').css('visibility', 'hidden');
