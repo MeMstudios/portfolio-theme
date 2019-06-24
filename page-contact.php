@@ -13,29 +13,16 @@
                 </div><!-- .col -->
             </div><!-- .row -->
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="featured-img">
-                        
-                            <?php echo get_the_post_thumbnail($post, array(420,420)); ?>
-                        
-                    </div><!-- .content-area -->
-                </div><!-- .col -->
-
                 <div class="col-12 col-lg-8">
                     <div class="content-area">
-                        <header class="entry-header">
-                            <div class="post-meta">
-                                <a href="/">Portfolio</a>
-                            </div><!-- .meta-post -->
+                        <header class="entry-header">                            
 
                             <h1><?php echo get_the_title(); ?></h1>
-
-                            <div class="contact">
-                                <?php echo do_shortcode('[contact-form-7 id="192" title="Contact form"]'); ?>
-                            </div>
+                           
                         </header><!-- .entry-header -->
-
+                        <div class="contact">
+                                <?php echo do_shortcode('[contact-form-7 id="192" title="Contact form"]'); ?>
+                        </div>
                     </div><!-- .content-area -->
                 </div><!-- .col-12 -->
             </div><!-- .row -->

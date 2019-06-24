@@ -107,6 +107,16 @@ a:hover, a:active {
     padding: 20px;
 }
 
+.footer {
+    padding: 20px 20px 4px 25px;
+    text-decoration: none; 
+    width: 100%;   
+}
+.footer .right {
+    text-align: right;
+    float: right;
+}
+
 /*
 # Site Branding
 --------------------------------*/
@@ -792,6 +802,12 @@ a:hover, a:active {
     .portfolio-content .entry-content {
         visibility: visible;
         opacity: 0.7;
+    }
+    input {
+        width: 85vw;
+    }
+    textarea {
+        width: 85vw;
     }
 }
 
