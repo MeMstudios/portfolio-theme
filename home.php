@@ -19,7 +19,7 @@
             <div class="col-12 col-md-6 col-lg-3 no-padding">
                 <div id="pm-header" class="portfolio-content">
                     <figure class="blue">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/head.png" alt="Project Management">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/head.jpg" alt="Project Management">
                     </figure>
                         <div id="pm-head" class="entry-content flex flex-column align-items-center justify-content-center">                            
                                 
@@ -37,7 +37,7 @@
             <div class="col-12 col-md-6 col-lg-3 no-padding">
                 <div id="dev-header" class="portfolio-content">
                     <figure class="yellow">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/big-head-sq.png" alt="Development">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/big-head-sq.jpg" alt="Development">
                     </figure>
 
                     <div id="dev-head" class="entry-content flex flex-column align-items-center justify-content-center">
@@ -56,7 +56,7 @@
             <div class="col-12 col-md-6 col-lg-3 no-padding">
                 <div id="devops-header" class="portfolio-content">
                     <figure class="green">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cloud-head.png" alt="DevOps">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cloud-head.jpg" alt="DevOps">
                     </figure>
 
                     <div id="devops-head" class="entry-content flex flex-column align-items-center justify-content-center">
@@ -75,7 +75,7 @@
             <div class="col-12 col-md-6 col-lg-3 no-padding">
                 <div id="music-header" class="portfolio-content">
                     <figure class="purple">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/color-head.png" alt="Music">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/color-head.jpg" alt="Music">
                     </figure>
 
                     <div id="music-head" class="entry-content flex flex-column align-items-center justify-content-center">
