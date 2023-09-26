@@ -23,12 +23,12 @@
                     </figure>
                         <div id="pm-head" class="entry-content flex flex-column align-items-center justify-content-center">                            
                                 
-                            <h3><a id="pm-link" href="#">Project Management</a></h3>
+                            <h3><a id="pm-link" href="#">Consulting</a></h3>
 
                             <ul class="flex flex-wrap justify-content-center">
-                                <li>Agile /</li>
-                                <li>Process /</li>
-                                <li>Planning</li>
+                                <li>Strategy /</li>
+                                <li>Design /</li>
+                                <li>Project Management</li>
                             </ul>
                         </div><!-- .entry-content -->                    
                 </div><!-- .portfolio-content -->
@@ -45,9 +45,9 @@
                         <h3><a id="dev-link" href="#">Development</a></h3>
 
                         <ul class="flex flex-wrap justify-content-center">                            
-                            <li>PHP /</li>
-                            <li>APIs /</li>
-                            <li>JavaScript Frameworks</li>
+                            <li>Apps /</li>
+                            <li>Integrations /</li>
+                            <li>APIs</li>
                         </ul>
                     </div><!-- .entry-content -->
                 </div><!-- .portfolio-content -->
@@ -64,7 +64,7 @@
                         <h3><a id="devops-link" href="#">DevOps</a></h3>
 
                         <ul class="flex flex-wrap justify-content-center">
-                            <li>Servers /</li>
+                            <li>Cloud /</li>
                             <li>Automation /</li>
                             <li>CI/CD</li>
                         </ul>
@@ -83,9 +83,9 @@
                         <h3><a id="music-link" href="#">Personal Projects</a></h3>
 
                         <ul class="flex flex-wrap justify-content-center">
-                            <li>Research /</li>
+                            <li>Apps /</li>
                             <li>Music /</li>
-                            <li>GoLang</li>
+                            <li>Games</li>
                         </ul>
                     </div><!-- .entry-content -->
                 </div><!-- .portfolio-content -->
