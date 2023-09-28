@@ -19,7 +19,7 @@
             <div class="col-12 col-md-6 col-lg-3 no-padding">
                 <div id="pm-header" class="portfolio-content">
                     <figure class="blue">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/head.jpg" alt="Project Management">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/headshot-2022-sq.jpg" alt="Project Management">
                     </figure>
                         <div id="pm-head" class="entry-content flex flex-column align-items-center justify-content-center">                            
                                 
@@ -37,7 +37,7 @@
             <div class="col-12 col-md-6 col-lg-3 no-padding">
                 <div id="dev-header" class="portfolio-content">
                     <figure class="yellow">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/big-head-sq.jpg" alt="Development">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cowboy_hacker.png" alt="Development">
                     </figure>
 
                     <div id="dev-head" class="entry-content flex flex-column align-items-center justify-content-center">
@@ -45,7 +45,7 @@
                         <h3><a id="dev-link" href="#">Development</a></h3>
 
                         <ul class="flex flex-wrap justify-content-center">                            
-                            <li>Apps /</li>
+                            <li>Applications /</li>
                             <li>Integrations /</li>
                             <li>APIs</li>
                         </ul>
@@ -75,7 +75,7 @@
             <div class="col-12 col-md-6 col-lg-3 no-padding">
                 <div id="music-header" class="portfolio-content">
                     <figure class="purple">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/color-head.jpg" alt="Music">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/future_hacker.png" alt="Music">
                     </figure>
 
                     <div id="music-head" class="entry-content flex flex-column align-items-center justify-content-center">
