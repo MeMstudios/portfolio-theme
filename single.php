@@ -22,7 +22,7 @@
                 <div class="col-12">
                     <div class="featured-img">
                         
-                            <?php echo get_the_post_thumbnail($post, array(420,420)); ?>
+                            <?php echo get_the_post_thumbnail($post, array(350,350)); ?>
                         
                     </div><!-- .content-area -->
                 </div><!-- .col -->
