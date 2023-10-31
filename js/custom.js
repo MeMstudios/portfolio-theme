@@ -136,5 +136,10 @@
             $('.purple').css('opacity', '0.4');
         }
     });
+
+    // Responsive
+    if ($( window ).width() < 575) {
+        $('#email').removeClass('right');
+    }
     
 })(jQuery);
